@@ -2,7 +2,9 @@
   <div class="home">
     <Appheader/>
     <b-row class="product-list">
-    <b-col cols="2" id="sidebar"><Category v-for="prodtypes in categories" :type="prodtypes" :key="prodtypes.id"/></b-col>
+    <b-col cols="2" id="sidebar">
+      <p><strong>Product Categories</strong></p><hr>
+    <Category v-for="prodtypes in categories" :type="prodtypes" :key="prodtypes.id"/></b-col>
     <b-col cols="10">
       <products v-for="product in products" :listing="product" :key="product.id"/>
     </b-col>
@@ -68,7 +70,7 @@ export default {
     categories: [
       {
         id:1,
-        name:"Product Categories"
+        name:"Fashion"
       },
       {
        id: 2,
@@ -107,5 +109,8 @@ export default {
 <style scoped>
 #sidebar{
   background-color: white; 
+}
+strong{
+  margin-top: 10px;
 }
 </style>
