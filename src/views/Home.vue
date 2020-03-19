@@ -12,6 +12,7 @@
       <products v-for="product in products" :listing="product" :key="product.id"/>
     </b-col>
   </b-row>
+  <Appfooter/>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import products from "../components/Products.vue"
 import Category from "../components/Category.vue"
 import Appheader from "../components/Appheader.vue"
 import Carousel from "../components/Carousel.vue"
+import Appfooter from "../components/Appfooter.vue"
 
 export default {
   name: 'Home',
@@ -135,7 +137,8 @@ export default {
     products,
     Category,
     Appheader,
-    Carousel
+    Carousel,
+    Appfooter
   }
 }
 </script>
@@ -147,8 +150,15 @@ strong{
   color: blue;
   font-size: 20px;
   margin-top: 200px;
+  
 }
 .product-list{
   margin-top: 100px;
 }
+@media screen and (max-width: 680px){
+  .sidebar{
+    display: none;
+  }
+}
+
 </style>
