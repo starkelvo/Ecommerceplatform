@@ -10,7 +10,7 @@
  :centerMode="true"
  :spacePadding="0">
    <slide v-for="pics in slides" :key="pics.id">
-    <img :src="pics.image" height="300px">
+    <img :src="pics.image" height="300px" width="auto">
   </slide>
 </carousel>
 </div>
