@@ -60,6 +60,7 @@
     margin-left: 400px;
     margin-top: 10px;
     border-radius: 5px;
+    overflow: hidden;
   }
   .slides{
     margin-top: 10px;

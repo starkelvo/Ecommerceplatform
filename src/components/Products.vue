@@ -38,6 +38,7 @@ img{
     margin-top: 10px;
     text-align: none;
     font-size: 14px;
+    overflow: hidden;
     
 }
 </style>

@@ -145,6 +145,7 @@ export default {
 <style scoped>
 #sidebar{
   background-color: white; 
+  overflow: hidden;
 }
 strong{
   color: blue;
@@ -154,9 +155,10 @@ strong{
 }
 .product-list{
   margin-top: 100px;
+  overflow: hidden;
 }
 @media screen and (max-width: 680px){
-  .sidebar{
+  #sidebar{
     display: none;
   }
 }

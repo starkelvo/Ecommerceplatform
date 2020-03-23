@@ -71,6 +71,7 @@
   margin-top: 30px;
   background-color: rgb(29, 27, 27);
   color: white;
+  overflow: hidden;
 }
 #head{
   margin-bottom: 10px;
@@ -91,5 +92,12 @@
   margin-left: 150px;
   margin-bottom: 10px;
 }
-
+/*############# Mobile Responsive #########*/
+@media screen and (max-width: 680px){
+  .images{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 100px;
+  }
+}
 </style>

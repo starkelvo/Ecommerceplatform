@@ -16,5 +16,11 @@ export default {
     margin-left: 10px;
     margin-top: 2px;
     border-radius: 5px;
+    overflow: hidden;
+}
+@media screen and (max-width: 680px){
+  .category{
+    display: none;
+  }
 }
 </style>

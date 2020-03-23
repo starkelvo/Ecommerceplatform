@@ -29,5 +29,12 @@ export default {
     margin-left: 500px;
 }
 
-
+@media screen and (max-width: 680px){
+  #sidebar{
+    display: none;
+  }
+  #company{
+margin-left: 10px;
+  }
+}
 </style>
