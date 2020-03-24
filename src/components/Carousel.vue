@@ -64,4 +64,9 @@
   .slides{
     margin-top: 10px;
   }
+  @media screen and (max-width: 680px){
+  carousel{
+    margin-left: 30px;
+  }
+}
 </style>

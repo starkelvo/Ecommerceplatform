@@ -15,6 +15,7 @@
         <img :src="imagePath(product)" alt="" class="img-fluid" >
          <p class="product-title">{{ product.name }}</p>
           <p><em>{{ product.price }}</em></p>
+          <h3 class="button">Order Now</h3>
         </router-link>
       </div>
     </div>
@@ -46,11 +47,6 @@ export default {
   },
   data(){
   return{
-    methods:{
-  goTodetail(id) {
-    this.$router.push({name:'details',params:{Pid:id}})
-  }
-  },
     categories: [
       {
         id:1,
@@ -113,6 +109,16 @@ strong{
   #sidebar{
     display: none;
   }
+  .row{
+    width: auto;
+    margin-left: 20px;
+  }
 }
-
+.button{
+  border: 2px green solid;
+  background-color: green;
+  width: 350px;
+  color: beige;
+  border-radius: 5px;
+}
 </style>
