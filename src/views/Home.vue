@@ -113,6 +113,9 @@ strong{
     width: auto;
     margin-left: 20px;
   }
+  .home{
+    width: auto;
+  }
 }
 .button{
   border: 2px green solid;
