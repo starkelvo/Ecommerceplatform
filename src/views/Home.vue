@@ -116,6 +116,9 @@ strong{
   .home{
     width: auto;
   }
+  .button{
+    width: 200px;
+  }
 }
 .button{
   border: 2px green solid;

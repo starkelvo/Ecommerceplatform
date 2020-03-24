@@ -35,6 +35,10 @@ export default {
   }
   #company{
 margin-left: 10px;
+font-size: 12px;
+  }
+  b-nav-form{
+    display: none;
   }
 }
 </style>

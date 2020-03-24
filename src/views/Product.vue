@@ -6,7 +6,7 @@
         <img  class="flex-col--2" :src="imagePath(product)" alt="">
         <div class="flex-col--2">
             <div class="Details">
-          <h2>{{ product.name }}</h2>
+          <h5>{{ product.name }}</h5>
           <h2>{{ product.price }}</h2>
           <p>Product Details: {{ product.details }}</p>
           <!-- <p>Size: {{ product.size }}</p>
