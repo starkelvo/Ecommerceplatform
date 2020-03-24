@@ -1,0 +1,43 @@
+#app{
+    margin-top: 100px;
+    font-family: sans-
+}
+form{
+    width: 300px;
+    margin-right: 0px;
+    float: none;
+}
+#Display{
+    margin-right: 30px;
+    margin-top: 50px;
+    width: auto;
+}
+.row{
+    margin-left: 350px;
+    border: white 1px solid;
+    width: auto;
+    height: 350px;
+    border-radius: 10px;
+}
+h3{
+    font-style: italic;
+    text-align: center;
+    color: blue;
+}
+img{
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+label{
+    text-align: center;
+}
+#login{
+    color: rgb(46, 131, 46);
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}

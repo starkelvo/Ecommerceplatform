@@ -1,11 +1,10 @@
 <template>
     <div class="products">
-<div class="image"><img :src="listing.imageLink" height="110px" width="300px"></div>
+<div class="image"><img :src="listing.imageLink" height="200px" width="300px"></div>
 <div class="productDetails" text-alone:none> 
 <p>{{listing.name}}</p>
-<p>{{listing.description}}</p>
-<p>{{listing.price}}</p>
-<b-button variant="success" id="button">Buy Now</b-button>
+<p>Price: {{listing.price}}</p>
+<b-button variant="success" id="button" @click="goTodetail(data.id)">Buy Now</b-button>
 </div>
     </div>
 </template>

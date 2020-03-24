@@ -10,7 +10,7 @@
  :centerMode="true"
  :spacePadding="0">
    <slide v-for="pics in slides" :key="pics.id">
-    <img :src="pics.image" height="300px" width="60%">
+    <img :src="pics.image" height="300px" width="1000px;">
   </slide>
 </carousel>
 </div>
@@ -24,26 +24,26 @@
            {
 
       id: 1,
-      image:require("../../src/assets/images/benze.webp")
+      image:require("../../src/assets/images/carous1.jpg")
       
     },
      {
       id: 2,
-      image:require("../../src/assets/images/mazda.webp")
+      image:require("../../src/assets/images/carous2.jpg")
     },
      {
       id: 3,
-      image:require("../../src/assets/images/anker.jpg")
+      image:require("../../src/assets/images/carous3.jpg")
     },
         {
 
       id: 4,
-      image:require("../../src/assets/images/benz2.jpeg")
+      image:require("../../src/assets/images/carous4.jpg")
       
     },
      {
       id: 5,
-      image:require("../../src/assets/images/watch.jpg")
+      image:require("../../src/assets/images/carous5.jpg")
     },
      
         ]
@@ -56,8 +56,7 @@
 
 <style>
   carousel{
-    
-    margin-left: 400px;
+    height: 300px;
     margin-top: 10px;
     border-radius: 5px;
     overflow: hidden;

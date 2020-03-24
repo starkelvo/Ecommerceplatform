@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="main.css">
+    <title>SIGN IN PAGE</title>
+</head>
+<body>
+    <div id="app" class="container">
+      <div class="row">
+        <div class="col">
+          <img src="login.png">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1"><strong>USERNAME</strong></label>
+          <input v-model="username"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"><strong>PASSWORD</strong></label>
+          <input v-model="password" 
+          type="password" 
+          class="form-control" 
+          id="exampleInputPassword1">
+        </div>
+        <button @click.prevent="details" 
+        type="submit" 
+        class="btn btn-primary"><strong>SUBMIT</strong></button>
+      </form>
+      <p id="login"><strong>Login and Continue</strong></p>
+      </div>
+      <div id="Display" v-if="show">
+        <p>YOUR USERNAME IS: {{usernameValue }} </p>
+        <p>YOUR PASSWORD IS: {{passwordValue }} </p>
+        </div>
+      </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

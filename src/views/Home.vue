@@ -9,7 +9,14 @@
     <b-col cols="10">
       <Carousel/>
       <p><strong>Top Selling Products</strong></p>
-      <products v-for="product in products" :listing="product" :key="product.id"/>
+      <div class="row">
+      <div class="col-md-4 col-lg4" v-for="(data,index) in products" :key="index" id="products">
+        <img :src="data.imageLink" class="img-fluid" @click="goTodetail(data.id)">
+         <p @click="goTodetail(fata.id)">{{data.name}}</p>
+         <p>{{data.price}}</p>
+        
+      </div>
+    </div>
     </b-col>
   </b-row>
   <Appfooter/>
@@ -18,7 +25,7 @@
 
 <script>
 // @ is an alias to /src
-import products from "../components/Products.vue"
+// import products from "../components/Products.vue"
 import Category from "../components/Category.vue"
 import Appheader from "../components/Appheader.vue"
 import Carousel from "../components/Carousel.vue"
@@ -28,77 +35,72 @@ export default {
   name: 'Home',
   data(){
   return{
+    methods:{
+  goTodetail(id) {
+    this.$router.push({name:'details',params:{Pid:id}})
+  }
+  },
     products:[
        {
       id: 1,
-      name: "2020 Mercedes-Benz E-Class",
-      imageLink:require("../../src/assets/images/benze.webp"),
-      description: "The E 350 replaces last year's E 300 and gets a bump in horsepower",
-      price: "$107,350"
+      name: "KQRAS Men's Smart Watches Sport Fitness Tracker Color Screen-Black",
+      imageLink:require("../../src/assets/images/smartwatch.jpg"),
+      price: "₦2,999"
     },
      {
       id: 2,
-      name: "2020 Mazda CX-30",
-      imageLink:require("../../src/assets/images/mazda.webp"),
-      description: "The 2020 Mazda CX-30 is built to make you feel alive.",
-      price: "$29,200"
+      name: "KQRAS Men's Smart Watches Sport Fitness Tracker Color Screen-Black",
+      imageLink:require("../../src/assets/images/mobile watch.jpg"),
+      price: "₦4,999"
     },
      {
       id: 3,
-       name: "Anker SoundCore",
-      imageLink:require("../../src/assets/images/anker.jpg"),
-      description: "Anker SoundCore 2 Portable Bluetooth Wireless Speaker",
-      price: "$37.4"
+       name: "V9 Smart Mobile Sport Watch With SIM And Memory Card Slot",
+      imageLink:require("../../src/assets/images/wristband.jpg"),
+      price: "₦3,999"
     },
      {
       id: 4,
-      name: "Skinny Jeans in Dark Rinse Wash",
-      imageLink:require("../../src/assets/images/jean.jpeg"),
-      description: "Expertly designed with premium mills to smooth, lift, fit ",
-      price: "$91.32"
+      name: "Sony PS3 Controller Wireless Game Pad - DualShock 3 For Official PlayStation 3- Black",
+      imageLink:require("../../src/assets/images/gamepad.jpg"),
+      price: "₦3,999"
     },
      {
       id: 5,
       
-      name: "Wrist Watches For Men",
-      imageLink:require("../../src/assets/images/watch.jpg"),
-      description: "High Imported Quality, Shape: Round, Case: High Quality Stainless",
-      price: "$201.32"
+      name: "Portable High Definition Handheld Game 4.3'' Black",
+      imageLink:require("../../src/assets/images/nintendo.jpg"),
+      price: "₦3,999"
     },
      {
       id: 6,
-      name: "MERCEEDES BENZ CLA ",
-      imageLink:require("../../src/assets/images/benz1.jpeg"),
-      description: "High Imported Quality, Shape: Round, Case: High Quality Stainless",
-      price: "$200,101.32"
+      name: "Samsung Galaxy A30s 6.4-Inch (4GB,64GB ROM) Android 9.0, (25MP+8MP+5MP)+ 16MP Dual SIM 4000mAh 4G LTE - Prism Crush White",
+      imageLink:require("../../src/assets/images/samsung.jpg"),
+      price: "₦3,999"
     },
     {
       id: 7,
-      name: "2020 Mercedes-Benz E-Class",
-      imageLink:require("../../src/assets/images/benze.webp"),
-      description: "The E 350 replaces last year's E 300 and gets a bump in horsepower",
-      price: "$107,350"
+      name: "Elegant Designer Athletic Sneakers V2- Gold & Black",
+      imageLink:require("../../src/assets/images/shoe.jpg"),
+      price: "₦3,999"
     },
      {
       id: 8,
-      name: "2020 Mazda CX-30",
-      imageLink:require("../../src/assets/images/mazda.webp"),
-      description: "The 2020 Mazda CX-30 is built to make you feel alive.",
-      price: "$29,200"
+      name: "LED Backlight Sport Waterproof Quartz Wrist Watches-Black",
+      imageLink:require("../../src/assets/images/shoe.jpg"),
+      price: "₦3,999"
     },
      {
       id: 9,
-       name: "Anker SoundCore",
-      imageLink:require("../../src/assets/images/anker.jpg"),
-      description: "Anker SoundCore 2 Portable Bluetooth Wireless Speaker",
-      price: "$37.4"
+       name: "LED Backlight Sport Waterproof Quartz Wrist Watches-Black",
+      imageLink:require("../../src/assets/images/shoe.jpg"),
+      price: "₦3,999"
     },
      {
       id: 10,
-      name: "Skinny Jeans in Dark Rinse Wash",
-      imageLink:require("../../src/assets/images/jean.jpeg"),
-      description: "Expertly designed with premium mills to smooth, lift, fit ",
-      price: "$91.32"
+      name: "LED Backlight Sport Waterproof Quartz Wrist Watches-Black",
+      imageLink:require("../../src/assets/images/shoe.jpg"),
+      price: "₦3,999"
     }
     ],
     categories: [
@@ -133,8 +135,10 @@ export default {
       ]
   }
   },
+  
+
   components: {
-    products,
+    // products,
     Category,
     Appheader,
     Carousel,
@@ -143,6 +147,7 @@ export default {
 }
 </script>
 <style scoped>
+
 #sidebar{
   background-color: white; 
   overflow: hidden;
