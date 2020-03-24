@@ -1,7 +1,7 @@
 <template>
   <div>
   <b-navbar  type="dark" variant="info" fixed="top">
-    <b-navbar-brand href="#" id="company"><h3>CruiseMart Nigeria Unlimited</h3></b-navbar-brand>
+    <b-navbar-brand href="#" id="company"><h3>CruiseMart By Kelvin Eze</h3></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
