@@ -117,7 +117,7 @@ strong{
     width: auto;
   }
   .button{
-    width: 200px;
+    display: none;
   }
 }
 .button{
