@@ -3,14 +3,35 @@
       <Appheader/>
     <section class="wrapper">
       <div class="flex-col">
-        <img :src="imagePath(product)" alt="" height="400px" width="400px">
+        <div>
+        <img :src="imagePath(product)" alt="" height="300px" width="300px"><hr>
+        <div class="smallerimages" style="margin-top:10px">
+                      
+        <img :src="imagePath(product)" alt="" width=100 height=100 @click="changeimage1" class="small">
+        <img :src="imagePath1(product)" alt="" width=100 height=100 @click="changeimage2" class="small">
+        <img :src="imagePath2(product)" alt="" width=100 height=100 @click="changeimage3" class="small">
+                         
+           <hr>         
+        </div>
+        </div>
         <div class="flex-col--2">
             <div class="Details">
-          <h5>{{ product.name }}</h5>
-          <h2>{{ product.price }}</h2>
-          <button>Add To Cart</button>
+          <h5>{{ product.name }}</h5><hr>
+          <h2>{{ product.price }}</h2><hr>
+          <button>Add To Cart</button><hr>
           <p>Product Details: {{ product.details }}</p>
             </div>
+        </div>
+        <div class="flex-col--3">
+          <p><strong>DELIVERY & RETURNS</strong></p>
+          <p>Delivery Information</p>
+           With CruiseMart your
+            gadgets are assured and 
+            reliable, get started.
+
+            Returns With CruiseMart your
+              gadgets are assured and 
+              <p>reliable, get started.</p>
         </div>
       </div>
     </section>
@@ -31,7 +52,20 @@ export default {
   methods: {
     imagePath(product) {
       return require(`../../src/assets/images/${product.images[0]}`);
-    }
+    },
+    imagePath1(product) {
+      return require(`../../src/assets/images/${product.images[1]}`);
+    },
+    imagePath2(product) {
+      return require(`../../src/assets/images/${product.images[2]}`);
+    },
+  
+    changeimage1:function(){
+          this.imagePath = this.imagePath1      
+        },
+         changeimage2:function(){
+                this.imagePath = this.imagePath2       
+        },
   },
   components: {
     // products,
@@ -44,12 +78,17 @@ export default {
 <style lang="scss">
 .flex-col {
   display: flex;
-  align-items: flex-start;
+  align-items: justify-content;
   text-align: left;
 }
 .flex-col--2 {
   width: 500px;
   margin-left: 150px;
+  border: 1px rgb(143, 139, 139) lightgrey;
+}
+.flex-col--3{
+  width: 200px;
+  margin-left: 40px;
 }
 .wrapper{
     margin-top: 100px;
@@ -61,10 +100,10 @@ img{
   margin-left: 50px;
 }
 button{
-  background-color: green;
-  border: 0px green;
+  background-color: rgb(96, 96, 221);
+  border: 0px rgb(195, 204, 72);
   color: white;
-  width: 400px;
+  width: 200px;
   border-radius: 5px;
 }
 @media screen and (max-width: 680px){
@@ -77,10 +116,17 @@ button{
     display:block;
     margin-left: 30px;
   }
+  .flex-col--3{
+    display: none;
+  }
   img{
     width: auto;
     float: none;
   }
 }
+.small{
+  border: 1px black solid;
+}
+
 
 </style>

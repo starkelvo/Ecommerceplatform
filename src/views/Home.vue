@@ -18,7 +18,6 @@
         <img :src="imagePath(product)" alt="" class="img-fluid" >
          <p class="product-title">{{ product.name }}</p>
           <p><em>{{ product.price }}</em></p>
-          <h3 class="button">Order Now</h3>
         </router-link>
       </div>
     </div>
@@ -114,17 +113,11 @@ strong{
   }
   .row{
     width: auto;
-    margin-left: 20px;
+    margin-left: auto;
   }
   .home{
     width: auto;
   }
 }
-.button{
-  border: 2px green solid;
-  background-color: green;
-  width: 300px;
-  color: beige;
-  border-radius: 5px;
-}
+
 </style>
