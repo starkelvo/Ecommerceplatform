@@ -5,7 +5,10 @@
     <b-row class="product-list">
     <b-col cols="2" id="sidebar">
     <p><strong>Product Categories</strong></p><hr>
-    <Category v-for="prodtypes in categories" :type="prodtypes" :key="prodtypes.id"/></b-col>
+    <Category v-for="prodtypes in categories" :type="prodtypes" :key="prodtypes.id"/>
+    
+    
+    </b-col>
     <b-col cols="10">
       <Carousel/>
       <p><strong>Top Selling Products</strong></p>
@@ -117,13 +120,13 @@ strong{
     width: auto;
   }
   .button{
-    width: 200px;
+    display: none;
   }
 }
 .button{
   border: 2px green solid;
   background-color: green;
-  width: 350px;
+  width: 300px;
   color: beige;
   border-radius: 5px;
 }

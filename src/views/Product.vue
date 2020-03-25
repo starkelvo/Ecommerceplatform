@@ -3,21 +3,13 @@
       <Appheader/>
     <section class="wrapper">
       <div class="flex-col">
-        <img  class="flex-col--2" :src="imagePath(product)" alt="">
+        <img :src="imagePath(product)" alt="" height="400px" width="400px">
         <div class="flex-col--2">
             <div class="Details">
           <h5>{{ product.name }}</h5>
           <h2>{{ product.price }}</h2>
+          <button>Add To Cart</button>
           <p>Product Details: {{ product.details }}</p>
-          <!-- <p>Size: {{ product.size }}</p>
-          <p>Color: {{ product.color }}</p>
-          <p><em>{{ product.quantity }} left in stock</em></p> -->
-          <!-- <h3>Details</h3>
-          
-            <p>Detail: {{ product.details.detaill }}</p>
-            <p>Fit: {{ product.details.fit }}</p>
-            <p>Maintenance: {{ product.details.maintenance }}</p> -->
-            <!-- <p v-if="product.details.additional">Additional: {{ product.details.additional }}</p> -->
             </div>
         </div>
       </div>
@@ -53,12 +45,42 @@ export default {
 .flex-col {
   display: flex;
   align-items: flex-start;
+  text-align: left;
 }
 .flex-col--2 {
-  width: 50%;
+  width: 500px;
+  margin-left: 150px;
 }
 .wrapper{
     margin-top: 100px;
+}
+h5, h2{
+  color: rgb(47, 120, 255);
+}
+img{
+  margin-left: 50px;
+}
+button{
+  background-color: green;
+  border: 0px green;
+  color: white;
+  width: 400px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 680px){
+  .flex-col--2{
+    margin: 5px;
+    width: auto;
+    float: none;
+  }
+  .flex-col{
+    display:block;
+    margin-left: 30px;
+  }
+  img{
+    width: auto;
+    float: none;
+  }
 }
 
 </style>

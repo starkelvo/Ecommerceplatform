@@ -4,34 +4,34 @@
     <b-col id="footer1" cols="4">
      
       <ul>
-       <li><h6> Help Centre</h6></li>
-       <li>Help Center</li>
-        <li>Contact us</li>
-        <li>How to shop on CruiseMart?</li>
-        <li>Delivery options and timelines</li>
-        <li>How to return a product on Cruisemart?</li>
-        <li>Corporate and bulk purchases</li>
+       <a href="#"><li><h6> Help Centre</h6></li></a>
+       <li class="hide">Help Center</li>
+        <li class="hide">Contact us</li>
+        <li class="hide">How to shop on CruiseMart?</li>
+        <li class="hide">Delivery options and timelines</li>
+        <li class="hide">How to return a product on Cruisemart?</li>
+        <li class="hide">Corporate and bulk purchases</li>
       </ul>
     </b-col>
     <b-col id="footer1" cols="4">
       <ul>
-        <li><h6>About CruiseMart</h6></li>
-        <li>About us</li>
-        <li>CruiseMart Express</li>
-        <li>Terms and Conditions</li>
-         <li>Privacy policy</li>
-         <li>Stay Safe</li>
+        <a href="#"><li><h6>About CruiseMart</h6></li></a>
+        <li class="hide">About us</li>
+        <li class="hide">CruiseMart Express</li>
+        <li class="hide">Terms and Conditions</li>
+         <li class="hide">Privacy policy</li>
+         <li class="hide">Stay Safe</li>
        
       </ul>
       </b-col>
     <b-col id="footer1" cols="4">
       <ul>
-        <li> <h6> Our Coverage</h6></li>
-        <li>Algeria</li>
-         <li>Egypt</li>
-           <li>Ghana</li>
-          <li>Ivory Coast</li>
-          <li>Nigeria</li>
+        <a href="#"><li> <h6> Our Coverage</h6></li></a>
+        <li class="hide">Algeria</li>
+         <li class="hide">Egypt</li>
+           <li class="hide">Ghana</li>
+          <li class="hide">Ivory Coast</li>
+          <li class="hide">Nigeria</li>
        
       </ul>
     </b-col>
@@ -98,6 +98,9 @@
     margin-top: 25px;
     margin-left: 10px;
     width: 100px;
+  }
+  .hide{
+    display: none;
   }
 }
 </style>

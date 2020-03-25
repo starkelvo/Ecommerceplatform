@@ -66,7 +66,7 @@ export default new Vuex.Store({
    },
     {
      id: 6,
-     name: "Samsung Galaxy A30s 6.4-Inch (4GB,64GB ROM) Android 9.0, (25MP+8MP+5MP)+ 16MP Dual SIM 4000mAh 4G LTE - Prism Crush White",
+     name: "Samsung Galaxy A30s 6.4-Inch (4GB,64GB ROM) Android 9.0",
     //  imageLink:require("../../src/assets/images/samsung.jpg"),
      price: "₦3,999",
      category: "Clothings",
@@ -132,7 +132,7 @@ export default new Vuex.Store({
   },
   {
     id: 12,
-    name: "Sony PS4 Pad Official Controller With Touchpad Lightbar - Latest Edition Playstation Dualshock 4 - Army Camouflage/Urban Camouflage",
+    name: "Sony PS4 Pad Official Controller With Touchpad Lightbar",
    //  imageLink:require("../../src/assets/images/shoe.jpg"),
     price: "₦2,999",
     category: "Clothings",
