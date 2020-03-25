@@ -119,9 +119,6 @@ strong{
   .home{
     width: auto;
   }
-  .button{
-    display: none;
-  }
 }
 .button{
   border: 2px green solid;
